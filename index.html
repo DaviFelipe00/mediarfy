@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediarfy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .aurora-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -10; background-color: #0B1120; overflow: hidden; }
+        .aurora-shape1 { position: absolute; height: 400px; width: 400px; background: radial-gradient(circle, rgba(2, 132, 199, 0.4) 0%, rgba(2, 132, 199, 0) 70%); border-radius: 9999px; filter: blur(100px); top: -100px; left: -100px; animation: move-aurora1 15s infinite alternate; }
+        .aurora-shape2 { position: absolute; height: 500px; width: 500px; background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(37, 99, 235, 0) 70%); border-radius: 9999px; filter: blur(120px); bottom: -150px; right: -150px; animation: move-aurora2 20s infinite alternate; }
+        @keyframes move-aurora1 { from { transform: translate(-20px, 50px) rotate(0deg); } to { transform: translate(100px, -30px) rotate(45deg); } }
+        @keyframes move-aurora2 { from { transform: translate(30px, -60px) rotate(0deg); } to { transform: translate(-80px, 40px) rotate(-60deg); } }
+        
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary .arrow-down { transform: rotate(180deg); }
+    </style>
+</head>
+<body class="bg-[#0B1120] text-slate-200 antialiased">
+
+    <div class="aurora-bg">
+        <div class="aurora-shape1"></div>
+        <div class="aurora-shape2"></div>
+    </div>
+
+    <header class="sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/50 backdrop-blur-lg">
+            <a href="#" class="flex items-center gap-3">
+                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-sky-500">
+                    <span class="text-lg font-bold text-white">M</span>
+                </div>
+                <span class="text-2xl font-bold tracking-wider">Mediarfy</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center text-sm font-semibold text-slate-300">
+                <a href="#solucoes" class="hover:text-sky-400 transition-colors duration-300">Soluções</a>
+                <a href="#sobre" class="hover:text-sky-400 transition-colors duration-300">Sobre Nós</a>
+                <a href="#equipe" class="hover:text-sky-400 transition-colors duration-300">Equipe</a>
+                <a href="#contato" class="hover:text-sky-400 transition-colors duration-300">Contato</a>
+            </div>
+            <a href="#contato" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-300 transform hover:scale-105">
+                Agendar Consulta
+            </a>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <section class="container mx-auto px-6 pt-24 pb-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up">
+                Resolução de Conflitos,
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">
+                    Elevada a um Novo Nível.
+                </span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="200">
+                Combinamos expertise jurídica e tecnologia para oferecer mediação e arbitragem de forma ágil, confidencial e definitiva.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <a href="#contato" class="bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-10 py-4 rounded-lg text-lg hover:from-sky-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:scale-105">
+                    Inicie seu Procedimento
+                </a>
+            </div>
+        </section>
+
+        <section id="solucoes" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">Nossas Soluções</h2>
+                    <p class="text-slate-400 mt-2">Os melhores métodos para cada tipo de disputa.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div data-aos="fade-right" class="bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                        <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Mediação</h3>
+                        <p class="text-slate-400">O mediador facilita o diálogo para que as próprias partes construam um acordo vantajoso, focando na manutenção de relacionamentos e na solução criativa de problemas.</p>
+                    </div>
+                    <div data-aos="fade-left" class="bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                        <h3 class="text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Arbitragem</h3>
+                        <p class="text-slate-400">Especialistas na área da disputa proferem uma decisão final (sentença arbitral) com a mesma força de uma sentença judicial, garantindo uma resolução técnica e definitiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right" class="flex items-center justify-center p-8 bg-slate-800/20 rounded-lg">
+                        <blockquote class="border-l-4 border-sky-500 pl-6">
+                            <p class="text-xl italic text-slate-300">"Nossa missão é fornecer um ambiente neutro, ético e com especialistas de alto nível para que disputas complexas sejam resolvidas com eficiência."</p>
+                            <cite class="block text-right mt-4 text-slate-400">- A Equipe Mediarfy</cite>
+                        </blockquote>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="text-4xl font-bold mb-4">Construindo Pontes, Não Muros</h2>
+                        <p class="text-slate-400 mb-4">A Mediarfy nasceu da convicção de que a resolução de conflitos pode ser mais humana, ágil e inteligente. Em um mundo onde o litígio judicial é muitas vezes lento e desgastante, oferecemos uma alternativa moderna e eficaz, focada em resultados que preservam valor e relacionamentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="equipe" class="py-20 bg-slate-900/40">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">Corpo Técnico Especializado</h2>
+                    <p class="text-slate-400 mt-2">Profissionais com vasta experiência e credibilidade no mercado.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div data-aos="fade-up" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
+                            <span class="text-5xl font-bold text-sky-400">NP</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Nome do Profissional</h3>
+                        <p class="text-sky-400 font-semibold mb-2">Mediador Sênior & Árbitro</p>
+                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
+                            <span class="text-5xl font-bold text-sky-400">ON</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Outro Nome</h3>
+                        <p class="text-sky-400 font-semibold mb-2">Especialista em Mediação Empresarial</p>
+                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="400" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
+                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
+                            <span class="text-5xl font-bold text-sky-400">MN</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Mais um Nome</h3>
+                        <p class="text-sky-400 font-semibold mb-2">Árbitro de Disputas Contratuais</p>
+                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="areas" class="py-20">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">Áreas de Atuação</h2>
+                    <p class="text-slate-400 mt-2">Soluções para uma ampla gama de disputas cíveis e empresariais.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto" data-aos="fade-up">
+                    <div class="text-center p-4"><div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800"><svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg></div><p class="font-semibold">Empresarial e Societário</p></div>
+                    <div class="text-center p-4"><div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800"><svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg></div><p class="font-semibold">Imobiliário e Construção</p></div>
+                    <div class="text-center p-4"><div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800"><svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><p class="font-semibold">Contratos e Obrigações</p></div>
+                    <div class="text-center p-4"><div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800"><svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div><p class="font-semibold">Família e Sucessões</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl font-bold">Perguntas Frequentes</h2>
+                    <p class="text-slate-400 mt-2">Respostas para as dúvidas mais comuns sobre nossos procedimentos.</p>
+                </div>
+                <div class="space-y-4" data-aos="fade-up">
+                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-6 group">
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Qual a diferença entre Mediação e Arbitragem?<svg class="h-6 w-6 transform transition-transform duration-300 arrow-down" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <p class="text-slate-400 mt-4">Na Mediação, um terceiro neutro (mediador) ajuda as partes a chegarem a um acordo, mas elas retêm o poder de decisão. Na Arbitragem, as partes elegem um terceiro (árbitro) para tomar uma decisão final e vinculante sobre o conflito, que tem força de sentença judicial.</p>
+                    </details>
+                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-6 group">
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">O acordo da mediação tem validade jurídica?<svg class="h-6 w-6 transform transition-transform duration-300 arrow-down" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <p class="text-slate-400 mt-4">Sim. O acordo firmado em mediação, assinado pelas partes e seus advogados, constitui um título executivo extrajudicial, o que lhe confere plena força jurídica para ser executado.</p>
+                    </details>
+                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-6 group">
+                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-lg">Quanto tempo dura um procedimento?<svg class="h-6 w-6 transform transition-transform duration-300 arrow-down" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></summary>
+                        <p class="text-slate-400 mt-4">Embora varie com a complexidade do caso, os procedimentos de mediação e arbitragem são significativamente mais rápidos que os processos judiciais. Muitos casos são resolvidos em questão de semanas ou poucos meses, em contraste com os anos que um processo pode levar na justiça comum.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+<footer id="contato" class="border-t border-slate-500/20 mt-20 bg-slate-900/40">
+    <div class="container mx-auto px-6">
+        <div class="py-16 text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Vamos Conversar?</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-8">
+                Clique no botão abaixo para iniciar uma conversa confidencial via WhatsApp. Nossa equipe está pronta para entender seu caso e propor a melhor solução.
+            </p>
+            <a href="https://wa.me/5511999998888" 
+               target="_blank" 
+               class="inline-flex items-center justify-center gap-3 bg-emerald-500 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-emerald-600 transition-colors duration-300 shadow-lg shadow-emerald-500/20 transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413 0 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l-.287 1.043 1.06.28zm7.48-3.219c-.218-.11-.958-.475-1.107-.528-.148-.052-.256-.08-.364.08-.108.16-.417.528-.512.632-.095.104-.189.117-.337.065-.148-.052-1.009-.372-1.922-1.183-.712-.642-1.19-1.429-1.336-1.673-.147-.244-.019-.377.088-.48.097-.092.217-.232.324-.347.108-.115.145-.192.218-.32.073-.127.036-.232-.019-.328-.055-.096-.364-.87-.499-1.196-.134-.326-.269-.281-.364-.286-.095-.005-.203-.005-.311-.005-.108 0-.287.036-.435.192-.148.156-.563.546-.563 1.328 0 .782.578 1.543.66 1.659.082.115 1.132 1.776 2.743 2.451.355.148.64.235.863.303.351.108.625.093.84.037.237-.065.958-.393 1.092-.776.134-.383.134-.71.095-.776-.039-.065-.147-.104-.217-.147z" />
+                </svg>
+                Fale Conosco no WhatsApp
+            </a>
+        </div>
+        
+        <hr class="border-slate-700">
+
+        <div class="grid md:grid-cols-3 gap-8 py-12 text-center md:text-left">
+            <div>
+                <a href="#" class="flex items-center justify-center md:justify-start gap-3 mb-4">
+                    <div class="flex items-center justify-center h-8 w-8 rounded-full bg-sky-500">
+                        <span class="text-lg font-bold text-white">M</span>
+                    </div>
+                    <span class="text-xl font-bold tracking-wider">Mediarfy</span>
+                </a>
+                <p class="text-slate-400 text-sm">Resolução de conflitos com agilidade, confidencialidade e segurança jurídica.</p>
+            </div>
+            
+            <div>
+                <h3 class="font-bold text-white mb-4">Navegação</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#solucoes" class="text-slate-400 hover:text-sky-400 transition-colors">Soluções</a></li>
+                    <li><a href="#sobre" class="text-slate-400 hover:text-sky-400 transition-colors">Sobre Nós</a></li>
+                    <li><a href="#equipe" class="text-slate-400 hover:text-sky-400 transition-colors">Nossa Equipe</a></li>
+                    <li><a href="#faq" class="text-slate-400 hover:text-sky-400 transition-colors">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-bold text-white mb-4">Contato</h3>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li>Ed Luciano Costa - R. Dona Maria César, 170 - Sala 203</li>
+                    <li>Recife, PE, 50030-140</li>
+                    <li class="pt-2"><a href="mailto:contato@mediarfy.com.br" class="hover:text-sky-400 transition-colors">contato@mediarfy.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="py-6 text-center text-slate-500 text-sm">
+             <p>&copy; 2025 Mediarfy. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700, once: true, offset: 120 });
+    </script>
+</body>
+</html>
