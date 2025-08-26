@@ -28,41 +28,75 @@
         <div class="aurora-shape1"></div>
         <div class="aurora-shape2"></div>
     </div>
-
-    <header class="sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/50 backdrop-blur-lg">
-            <a href="#" class="flex items-center gap-3">
-                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-sky-500">
-                    <span class="text-lg font-bold text-white">M</span>
-                </div>
-                <span class="text-2xl font-bold tracking-wider">Mediarfy</span>
+<header id="main-header" class="sticky top-0 z-50 transition-all duration-300 relative">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/20 backdrop-blur-lg relative z-20">
+<a href="#" class="flex items-center gap-3">
+    <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-10 transition-all">
+    <span class="text-2xl font-bold tracking-wider text-slate-200">
+        <span>MEDIAR</span><span class="text-blue-400">FY</span>
+    </span>
+</a>
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#solucoes" class="text-slate-300 font-semibold text-sm relative group">
+                <span>Soluções</span>
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <div class="hidden md:flex space-x-8 items-center text-sm font-semibold text-slate-300">
-                <a href="#solucoes" class="hover:text-sky-400 transition-colors duration-300">Soluções</a>
-                <a href="#sobre" class="hover:text-sky-400 transition-colors duration-300">Sobre Nós</a>
-                <a href="#equipe" class="hover:text-sky-400 transition-colors duration-300">Equipe</a>
-                <a href="#contato" class="hover:text-sky-400 transition-colors duration-300">Contato</a>
-            </div>
-            <a href="#contato" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-500 transition-colors duration-300 transform hover:scale-105">
+            <a href="#sobre" class="text-slate-300 font-semibold text-sm relative group">
+                <span>Sobre Nós</span>
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#metodo" class="text-slate-300 font-semibold text-sm relative group">
+                <span>Nosso Método</span>
+                <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <a href="#contato" class="hidden sm:block bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-blue-500 transition-all duration-300 shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 transform hover:scale-105">
                 Agendar Consulta
             </a>
-        </nav>
-    </header>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none z-50" aria-label="Abrir menu" aria-expanded="false">
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-300 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" 
+         class="absolute md:hidden w-full top-0 pt-20 bg-slate-900/95 backdrop-blur-lg 
+                transform -translate-y-4 opacity-0 invisible 
+                transition-all duration-300 ease-in-out z-10">
+        <a href="#solucoes" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Soluções</a>
+        <a href="#sobre" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Sobre Nós</a>
+        <a href="#metodo" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Nosso Método</a>
+        <div class="px-6 py-4">
+            <a href="#contato" class="block w-full text-center bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-500 transition-colors">
+                Agendar Consulta
+            </a>
+        </div>
+    </div>
+</header>
 
     <main class="relative z-10">
         <section class="container mx-auto px-6 pt-24 pb-32 text-center">
             <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up">
-                Resolução de Conflitos,
+                Resolução de Conflitos
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">
                     Elevada a um Novo Nível.
                 </span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="200">
-                Combinamos expertise jurídica e tecnologia para oferecer mediação e arbitragem de forma ágil, confidencial e definitiva.
+                Reconhecido pela Lei nº 9.307/96 e Lei nº 13.140/15. <br>
+Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor jurídico que uma sentença judicial e precisam ser cumpridos por lei.
             </p>
             <div data-aos="fade-up" data-aos-delay="400">
                 <a href="#contato" class="bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-10 py-4 rounded-lg text-lg hover:from-sky-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:scale-105">
-                    Inicie seu Procedimento
+                    Inicie seu procedimento
                 </a>
             </div>
         </section>
@@ -103,40 +137,44 @@
             </div>
         </section>
         
-        <section id="equipe" class="py-20 bg-slate-900/40">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-4xl font-bold">Corpo Técnico Especializado</h2>
-                    <p class="text-slate-400 mt-2">Profissionais com vasta experiência e credibilidade no mercado.</p>
+<section id="metodo" class="py-20 bg-slate-900/40">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-bold">Nosso Método de Resolução</h2>
+            <p class="text-slate-400 mt-2">Uma abordagem estruturada para garantir clareza, segurança e os melhores resultados.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">01</span>
+                    <h3 class="text-xl font-bold text-white">Análise Inicial</h3>
                 </div>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div data-aos="fade-up" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
-                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
-                            <span class="text-5xl font-bold text-sky-400">NP</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Nome do Profissional</h3>
-                        <p class="text-sky-400 font-semibold mb-2">Mediador Sênior & Árbitro</p>
-                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
-                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
-                            <span class="text-5xl font-bold text-sky-400">ON</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Outro Nome</h3>
-                        <p class="text-sky-400 font-semibold mb-2">Especialista em Mediação Empresarial</p>
-                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="400" class="text-center bg-slate-800/40 backdrop-blur-lg p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
-                        <div class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-slate-600 bg-slate-700 flex items-center justify-center">
-                            <span class="text-5xl font-bold text-sky-400">MN</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-white">Mais um Nome</h3>
-                        <p class="text-sky-400 font-semibold mb-2">Árbitro de Disputas Contratuais</p>
-                        <p class="text-slate-400 text-sm">Breve biografia do profissional, destacando sua especialidade, formação e experiência na área de resolução de conflitos.</p>
-                    </div>
-                </div>
+                <p class="text-slate-400 text-sm">Realizamos uma consulta confidencial para entender profundamente as nuances do conflito, os interesses das partes e os objetivos a serem alcançados.</p>
             </div>
-        </section>
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">02</span>
+                    <h3 class="text-xl font-bold text-white">Definição da Estratégia</h3>
+                </div>
+                <p class="text-slate-400 text-sm">Com base na análise, recomendamos o método mais adequado: Mediação, Arbitragem ou uma abordagem híbrida e definimos os próximos passos junto aos envolvidos.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">03</span>
+                    <h3 class="text-xl font-bold text-white">Condução do Procedimento</h3>
+                </div>
+                <p class="text-slate-400 text-sm">Nossos especialistas conduzem as sessões com total imparcialidade e técnica, facilitando o diálogo produtivo ou analisando as evidências para uma decisão justa.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-800/40 p-8 rounded-2xl border border-slate-700">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">04</span>
+                    <h3 class="text-xl font-bold text-white">Formalização do Acordo</h3>
+                </div>
+                <p class="text-slate-400 text-sm">O resultado, seja um acordo construído pelas partes ou uma sentença arbitral, é formalizado em um documento com plena validade jurídica e força executiva.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="areas" class="py-20">
              <div class="container mx-auto px-6">
@@ -177,25 +215,39 @@
         </section>
     </main>
     
-<footer id="contato" class="border-t border-slate-500/20 mt-20 bg-slate-900/40">
+<footer id="contato" class="mt-20 bg-slate-900/40">
     <div class="container mx-auto px-6">
-        <div class="py-16 text-center" data-aos="fade-up">
-            <h2 class="text-4xl font-bold mb-4">Vamos Conversar?</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto mb-8">
-                Clique no botão abaixo para iniciar uma conversa confidencial via WhatsApp. Nossa equipe está pronta para entender seu caso e propor a melhor solução.
-            </p>
-            <a href="https://wa.me/5511999998888" 
-               target="_blank" 
-               class="inline-flex items-center justify-center gap-3 bg-emerald-500 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-emerald-600 transition-colors duration-300 shadow-lg shadow-emerald-500/20 transform hover:scale-105">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413 0 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 4.315 1.731 6.086l-.287 1.043 1.06.28zm7.48-3.219c-.218-.11-.958-.475-1.107-.528-.148-.052-.256-.08-.364.08-.108.16-.417.528-.512.632-.095.104-.189.117-.337.065-.148-.052-1.009-.372-1.922-1.183-.712-.642-1.19-1.429-1.336-1.673-.147-.244-.019-.377.088-.48.097-.092.217-.232.324-.347.108-.115.145-.192.218-.32.073-.127.036-.232-.019-.328-.055-.096-.364-.87-.499-1.196-.134-.326-.269-.281-.364-.286-.095-.005-.203-.005-.311-.005-.108 0-.287.036-.435.192-.148.156-.563.546-.563 1.328 0 .782.578 1.543.66 1.659.082.115 1.132 1.776 2.743 2.451.355.148.64.235.863.303.351.108.625.093.84.037.237-.065.958-.393 1.092-.776.134-.383.134-.71.095-.776-.039-.065-.147-.104-.217-.147z" />
-                </svg>
-                Fale Conosco no WhatsApp
-            </a>
-        </div>
-        
-        <hr class="border-slate-700">
+        <div data-aos="fade-up" 
+     class="relative -top-16 bg-slate-800/40 backdrop-blur-lg p-8 md:p-12 rounded-2xl border border-slate-700 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10 transform hover:-translate-y-2">
+    
+<div class="grid md:grid-cols-2 gap-8 items-center">
+    
+    <div class="text-left">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">
+                Pronto para resolver?
+            </span>
+        </h2>
+    
+        <p class="text-slate-400">
+            Nossa equipe está à disposição para uma avaliação confidencial do seu caso. Dê o primeiro passo para a solução mais eficiente.
+        </p>
+    </div>
 
+    <div class="flex flex-col items-center justify-center gap-4"> 
+        <a href="https://wa.me/558187000534" 
+           target="_blank" 
+           class="inline-flex w-auto items-center justify-center gap-3 bg-emerald-600 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-emerald-500 transition-colors duration-300 shadow-lg shadow-emerald-600/20 transform hover:scale-105">
+           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+            <span>Iniciar Conversa no WhatsApp</span>
+        </a>
+        <p class="text-xs text-slate-400">Horário de atendimento: Seg a Sex, 9h às 18h.</p>
+    </div>
+</div>
+</div>
+        
         <div class="grid md:grid-cols-3 gap-8 py-12 text-center md:text-left">
             <div>
                 <a href="#" class="flex items-center justify-center md:justify-start gap-3 mb-4">
@@ -237,5 +289,42 @@
     <script>
         AOS.init({ duration: 700, once: true, offset: 120 });
     </script>
+
+<script>
+    // Lógica para o menu mobile (hamburger) com animação natural
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+
+    menuBtn.addEventListener('click', () => {
+        // Alterna a visibilidade do menu com animação
+        mobileMenu.classList.toggle('-translate-y-4'); // Começa um pouco acima
+        mobileMenu.classList.toggle('translate-y-0'); // Desce para a posição 0
+        mobileMenu.classList.toggle('opacity-0');
+        mobileMenu.classList.toggle('opacity-100');
+        mobileMenu.classList.toggle('invisible');
+        
+        // Alterna os ícones de abrir/fechar
+        iconOpen.classList.toggle('hidden');
+        iconClose.classList.toggle('hidden');
+
+        // Atualiza o estado de acessibilidade
+        const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !isExpanded);
+    });
+
+    // Lógica para o efeito de sombra no header ao rolar a página
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 10) {
+            header.classList.add('shadow-lg', 'border-slate-800');
+        } else {
+            header.classList.remove('shadow-lg', 'border-slate-800');
+        }
+    });
+</script>
+
+
 </body>
 </html>
