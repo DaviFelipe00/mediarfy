@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        html, body {
+            overflow-x: hidden;
+        }
         body { font-family: 'Inter', sans-serif; }
         .aurora-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -10; background-color: #0B1120; overflow: hidden; }
         .aurora-shape1 { position: absolute; height: 400px; width: 400px; background: radial-gradient(circle, rgba(2, 132, 199, 0.4) 0%, rgba(2, 132, 199, 0) 70%); border-radius: 9999px; filter: blur(100px); top: -100px; left: -100px; animation: move-aurora1 15s infinite alternate; }
@@ -31,12 +34,12 @@
 
 <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 relative">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/20 backdrop-blur-lg relative z-20">
-<a href="#" class="flex items-center gap-3">
-    <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-10 transition-all">
-    <span class="text-2xl font-bold tracking-wider text-slate-200">
-        <span>MEDIAR</span><span class="text-blue-400">FY</span>
-    </span>
-</a>
+        <a href="#" class="flex items-center gap-3">
+            <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-10 transition-all">
+            <span class="text-2xl font-bold tracking-wider text-slate-200">
+                <span>MEDIAR</span><span class="text-blue-400">FY</span>
+            </span>
+        </a>
         <div class="hidden md:flex items-center space-x-8">
             <a href="#solucoes" class="text-slate-300 font-semibold text-sm relative group">
                 <span>Soluções</span>
@@ -51,12 +54,10 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-sky-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
         </div>
-
         <div class="flex items-center gap-4">
             <a href="https://wa.me/558187000534" target="_blank" class="hidden sm:block bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg text-sm hover:bg-blue-500 transition-all duration-300 shadow-lg shadow-blue-600/20 hover:shadow-blue-500/30 transform hover:scale-105">
                 Agendar Consulta
             </a>
-
             <button id="menu-btn" class="md:hidden focus:outline-none z-50" aria-label="Abrir menu" aria-expanded="false">
                 <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -91,11 +92,11 @@
                     Elevada a um Novo Nível.
                 </span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="150">
                 Reconhecido pela Lei nº 9.307/96 e Lei nº 13.140/15. <br>
 Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor jurídico que uma sentença judicial e precisam ser cumpridos por lei.
             </p>
-            <div data-aos="fade-up" data-aos-delay="400">
+            <div data-aos="fade-up" data-aos-delay="250">
                 <a href="https://wa.me/558187000534" target="_blank" class="bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-10 py-4 rounded-lg text-lg hover:from-sky-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:scale-105">
                     Inicie seu procedimento
                 </a>
@@ -301,8 +302,14 @@ Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor 
 </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         AOS.init({ duration: 700, once: true, offset: 120 });
+        
+        // Correção para animações funcionarem no carregamento da página em mobile
+        window.addEventListener('load', () => {
+          AOS.refresh();
+        });
     </script>
 
     <script>
@@ -326,7 +333,6 @@ Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor 
 
             menuBtn.setAttribute('aria-expanded', !isExpanded);
             
-            // Impede a rolagem da página quando o menu está aberto
             if (!isExpanded) {
                 body.style.overflow = 'hidden';
             } else {
@@ -336,7 +342,6 @@ Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor 
 
         menuBtn.addEventListener('click', toggleMenu);
 
-        // Fecha o menu mobile quando clicar em um link
         const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -346,7 +351,6 @@ Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor 
             });
         });
 
-        // Lógica para o efeito de sombra no header ao rolar a página
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 10) {
