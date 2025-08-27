@@ -35,7 +35,7 @@
 <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 relative">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/20 backdrop-blur-lg relative z-20">
         <a href="#" class="flex items-center gap-3">
-            <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-10 transition-all">
+            <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-20 transition-all">
             <span class="text-2xl font-bold tracking-wider text-slate-200">
                 <span>MEDIAR</span><span class="text-blue-400">FY</span>
             </span>
@@ -71,13 +71,13 @@
     
     <div id="mobile-menu" 
          class="absolute md:hidden w-full top-0 pt-20 bg-slate-900/95 backdrop-blur-lg 
-                transform -translate-y-4 opacity-0 invisible 
+                transform -translate-y-full opacity-0 invisible 
                 transition-all duration-300 ease-in-out z-10">
         <a href="#solucoes" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Soluções</a>
         <a href="#sobre" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Sobre Nós</a>
         <a href="#metodo" class="block py-3 px-6 text-slate-300 hover:bg-slate-800 transition-colors">Nosso Método</a>
         <div class="px-6 py-4">
-            <a href="#contato" class="block w-full text-center bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-500 transition-colors">
+            <a href="https://wa.me/558187000534" target="_blank" class="block w-full text-center bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-500 transition-colors">
                 Agendar Consulta
             </a>
         </div>
@@ -85,183 +85,183 @@
 </header>
 
 <main class="relative z-10">
-    <section class="container mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 text-center">
-        <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up">
-            Resolução de Conflitos
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500">
-                Elevada a um Novo Nível.
-            </span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="150">
-            Reconhecido pela Lei nº 9.307/96 e Lei nº 13.140/15. <br>
-Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor jurídico que uma sentença judicial e precisam ser cumpridos por lei.
-        </p>
-        
-        <div data-aos="fade-up" data-aos-delay="250">
-            <a href="https://wa.me/558187000534" target="_blank" class="bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-10 py-4 rounded-lg text-lg hover:from-sky-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:scale-105">
-                Inicie seu procedimento
-            </a>
+    <section class="container mx-auto px-6 pt-8 pb-16 md:pt-16 md:pb-24 text-center min-h-screen flex flex-col justify-center">
+        <div class="flex-1 flex flex-col justify-center max-w-6xl mx-auto w-full">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight" data-aos="fade-up">
+                Resolução de Conflitos
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-500 block sm:inline">
+                    Elevada a um Novo Nível.
+                </span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8 px-4" data-aos="fade-up" data-aos-delay="150">
+                Reconhecido pela Lei nº 9.307/96 e Lei nº 13.140/15. <br class="hidden sm:block">
+                Os acordos e decisões obtidos pela Mediação ou Arbitragem têm o mesmo valor jurídico que uma sentença judicial e precisam ser cumpridos por lei.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-aos="fade-up" data-aos-delay="250">
+                <a href="https://wa.me/558187000534" target="_blank" class="bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-8 py-4 rounded-lg text-base md:text-lg hover:from-sky-400 hover:to-blue-500 transition-all duration-300 shadow-lg shadow-blue-500/20 transform hover:scale-105 w-full sm:w-auto text-center">
+                    Inicie seu procedimento
+                </a>
+            </div>
         </div>
     </section>
+</main>
 
-    </main>
+<section id="solucoes" class="py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl font-bold">Nossas Soluções</h2>
+            <p class="text-slate-400 mt-2">Os melhores métodos para cada tipo de disputa.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            <div data-aos="fade-right" class="bg-slate-800/40 backdrop-blur-lg p-6 sm:p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Mediação</h3>
+                <p class="text-slate-400 text-sm sm:text-base">O mediador facilita o diálogo para que as próprias partes construam um acordo vantajoso, focando na manutenção de relacionamentos e na solução criativa de problemas.</p>
+            </div>
+            <div data-aos="fade-left" class="bg-slate-800/40 backdrop-blur-lg p-6 sm:p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
+                <h3 class="text-2xl sm:text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Arbitragem</h3>
+                <p class="text-slate-400 text-sm sm:text-base">Especialistas na área da disputa proferem uma decisão final (sentença arbitral) com a mesma força de uma sentença judicial, garantindo uma resolução técnica e definitiva.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section id="solucoes" class="py-12 sm:py-16">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold">Nossas Soluções</h2>
-                    <p class="text-slate-400 mt-2">Os melhores métodos para cada tipo de disputa.</p>
-                </div>
-                <div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
-                    <div data-aos="fade-right" class="bg-slate-800/40 backdrop-blur-lg p-6 sm:p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Mediação</h3>
-                        <p class="text-slate-400 text-sm sm:text-base">O mediador facilita o diálogo para que as próprias partes construam um acordo vantajoso, focando na manutenção de relacionamentos e na solução criativa de problemas.</p>
-                    </div>
-                    <div data-aos="fade-left" class="bg-slate-800/40 backdrop-blur-lg p-6 sm:p-8 rounded-2xl border border-slate-500/20 transition-all duration-300 hover:border-sky-500/50 hover:shadow-2xl hover:shadow-sky-500/10">
-                        <h3 class="text-2xl sm:text-3xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-sky-300">Arbitragem</h3>
-                        <p class="text-slate-400 text-sm sm:text-base">Especialistas na área da disputa proferem uma decisão final (sentença arbitral) com a mesma força de uma sentença judicial, garantindo uma resolução técnica e definitiva.</p>
-                    </div>
-                </div>
+<section id="sobre" class="py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
+            <div data-aos="fade-right" class="flex items-center justify-center p-6 sm:p-8 bg-slate-800/20 rounded-lg">
+                <blockquote class="border-l-4 border-sky-500 pl-4 sm:pl-6">
+                    <p class="text-base sm:text-lg italic text-slate-300">"Nossa missão é fornecer um ambiente neutro, ético e com especialistas de alto nível para que disputas complexas sejam resolvidas com eficiência."</p>
+                    <cite class="block text-right mt-4 text-slate-400 text-sm sm:text-base">- A Equipe Mediarfy</cite>
+                </blockquote>
             </div>
-        </section>
+            <div data-aos="fade-left" data-aos-delay="200">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Construindo Pontes, Não Muros</h2>
+                <p class="text-slate-400 mb-4 text-sm sm:text-base">A Mediarfy nasceu da convicção de que a resolução de conflitos pode ser mais humana, ágil e inteligente. Em um mundo onde o litígio judicial é muitas vezes lento e desgastante, oferecemos uma alternativa moderna e eficaz, focada em resultados que preservam valor e relacionamentos.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section id="sobre" class="py-12 sm:py-16">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
-                    <div data-aos="fade-right" class="flex items-center justify-center p-6 sm:p-8 bg-slate-800/20 rounded-lg">
-                        <blockquote class="border-l-4 border-sky-500 pl-4 sm:pl-6">
-                            <p class="text-base sm:text-lg italic text-slate-300">"Nossa missão é fornecer um ambiente neutro, ético e com especialistas de alto nível para que disputas complexas sejam resolvidas com eficiência."</p>
-                            <cite class="block text-right mt-4 text-slate-400 text-sm sm:text-base">- A Equipe Mediarfy</cite>
-                        </blockquote>
-                    </div>
-                    <div data-aos="fade-left" data-aos-delay="200">
-                        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Construindo Pontes, Não Muros</h2>
-                        <p class="text-slate-400 mb-4 text-sm sm:text-base">A Mediarfy nasceu da convicção de que a resolução de conflitos pode ser mais humana, ágil e inteligente. Em um mundo onde o litígio judicial é muitas vezes lento e desgastante, oferecemos uma alternativa moderna e eficaz, focada em resultados que preservam valor e relacionamentos.</p>
-                    </div>
+<section id="metodo" class="py-12 sm:py-16 bg-slate-900/40">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl font-bold">Nosso Método de Resolução</h2>
+            <p class="text-slate-400 mt-2">Uma abordagem estruturada para garantir clareza, segurança e os melhores resultados.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
+                <div class="flex flex-col items-start gap-3 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">01</span>
+                    <h3 class="text-xl font-bold text-white">Análise Inicial</h3>
                 </div>
+                <p class="text-slate-400 text-sm">Realizamos uma consulta confidencial para entender profundamente as nuances do conflito, os interesses das partes e os objetivos a serem alcançados.</p>
             </div>
-        </section>
-        
-        <section id="metodo" class="py-12 sm:py-16 bg-slate-900/40">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold">Nosso Método de Resolução</h2>
-                    <p class="text-slate-400 mt-2">Uma abordagem estruturada para garantir clareza, segurança e os melhores resultados.</p>
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
+                <div class="flex flex-col items-start gap-3 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">02</span>
+                    <h3 class="text-xl font-bold text-white">Definição da Estratégia</h3>
                 </div>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                    <div data-aos="fade-up" data-aos-delay="100" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
-                        <div class="flex flex-col items-start gap-3 mb-4">
-                            <span class="text-5xl font-black text-sky-400/50">01</span>
-                            <h3 class="text-xl font-bold text-white">Análise Inicial</h3>
-                        </div>
-                        <p class="text-slate-400 text-sm">Realizamos uma consulta confidencial para entender profundamente as nuances do conflito, os interesses das partes e os objetivos a serem alcançados.</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="200" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
-                        <div class="flex flex-col items-start gap-3 mb-4">
-                            <span class="text-5xl font-black text-sky-400/50">02</span>
-                            <h3 class="text-xl font-bold text-white">Definição da Estratégia</h3>
-                        </div>
-                        <p class="text-slate-400 text-sm">Com base na análise, recomendamos o método mais adequado: Mediação, Arbitragem ou uma abordagem híbrida e definimos os próximos passos junto aos envolvidos.</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
-                        <div class="flex flex-col items-start gap-3 mb-4">
-                            <span class="text-5xl font-black text-sky-400/50">03</span>
-                            <h3 class="text-xl font-bold text-white">Condução do Procedimento</h3>
-                        </div>
-                        <p class="text-slate-400 text-sm">Nossos especialistas conduzem as sessões com total imparcialidade e técnica, facilitando o diálogo produtivo ou analisando as evidências para uma decisão justa.</p>
-                    </div>
-                    <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
-                        <div class="flex flex-col items-start gap-3 mb-4">
-                            <span class="text-5xl font-black text-sky-400/50">04</span>
-                            <h3 class="text-xl font-bold text-white">Formalização do Acordo</h3>
-                        </div>
-                        <p class="text-slate-400 text-sm">O resultado, seja um acordo construído pelas partes ou uma sentença arbitral, é formalizado em um documento com plena validade jurídica e força executiva.</p>
-                    </div>
-                </div>
+                <p class="text-slate-400 text-sm">Com base na análise, recomendamos o método mais adequado: Mediação, Arbitragem ou uma abordagem híbrida e definimos os próximos passos junto aos envolvidos.</p>
             </div>
-        </section>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
+                <div class="flex flex-col items-start gap-3 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">03</span>
+                    <h3 class="text-xl font-bold text-white">Condução do Procedimento</h3>
+                </div>
+                <p class="text-slate-400 text-sm">Nossos especialistas conduzem as sessões com total imparcialidade e técnica, facilitando o diálogo produtivo ou analisando as evidências para uma decisão justa.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700">
+                <div class="flex flex-col items-start gap-3 mb-4">
+                    <span class="text-5xl font-black text-sky-400/50">04</span>
+                    <h3 class="text-xl font-bold text-white">Formalização do Acordo</h3>
+                </div>
+                <p class="text-slate-400 text-sm">O resultado, seja um acordo construído pelas partes ou uma sentença arbitral, é formalizado em um documento com plena validade jurídica e força executiva.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section id="areas" class="py-12 sm:py-16">
-            <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold">Áreas de Atuação</h2>
-                    <p class="text-slate-400 mt-2">Soluções para uma ampla gama de disputas cíveis e empresariais.</p>
+<section id="areas" class="py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl font-bold">Áreas de Atuação</h2>
+            <p class="text-slate-400 mt-2">Soluções para uma ampla gama de disputas cíveis e empresariais.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto" data-aos="fade-up">
+            <div class="text-center p-4">
+                <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
+                    <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                    </svg>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 max-w-6xl mx-auto" data-aos="fade-up">
-                    <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
-                            <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
-                        </div>
-                        <p class="font-semibold text-sm sm:text-base">Empresarial e Societário</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
-                            <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
-                            </svg>
-                        </div>
-                        <p class="font-semibold text-sm sm:text-base">Imobiliário e Construção</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
-                            <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                        </div>
-                        <p class="font-semibold text-sm sm:text-base">Contratos e Obrigações</p>
-                    </div>
-                    <div class="text-center p-4">
-                        <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
-                            <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-                        </div>
-                        <p class="font-semibold text-sm sm:text-base">Família e Sucessões</p>
-                    </div>
-                </div>
+                <p class="font-semibold text-sm sm:text-base">Empresarial e Societário</p>
             </div>
-        </section>
+            <div class="text-center p-4">
+                <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
+                    <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                    </svg>
+                </div>
+                <p class="font-semibold text-sm sm:text-base">Imobiliário e Construção</p>
+            </div>
+            <div class="text-center p-4">
+                <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
+                    <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <p class="font-semibold text-sm sm:text-base">Contratos e Obrigações</p>
+            </div>
+            <div class="text-center p-4">
+                <div class="flex items-center justify-center h-16 w-16 mx-auto mb-4 rounded-full bg-slate-800">
+                    <svg class="h-8 w-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <p class="font-semibold text-sm sm:text-base">Família e Sucessões</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section id="faq" class="py-12 sm:py-16">
-            <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
-                <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl sm:text-4xl font-bold">Perguntas Frequentes</h2>
-                    <p class="text-slate-400 mt-2">Respostas para as dúvidas mais comuns sobre nossos procedimentos.</p>
-                </div>
-                <div class="space-y-4" data-aos="fade-up">
-                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
-                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
-                            <span class="pr-2">Qual a diferença entre Mediação e Arbitragem?</span>
-                            <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <p class="text-slate-400 mt-4 text-sm sm:text-base">Na Mediação, um terceiro neutro (mediador) ajuda as partes a chegarem a um acordo, mas elas retêm o poder de decisão. Na Arbitragem, as partes elegem um terceiro (árbitro) para tomar uma decisão final e vinculante sobre o conflito, que tem força de sentença judicial.</p>
-                    </details>
-                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
-                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
-                             <span class="pr-2">O acordo da mediação tem validade jurídica?</span>
-                            <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <p class="text-slate-400 mt-4 text-sm sm:text-base">Sim. O acordo firmado em mediação, assinado pelas partes e seus advogados, constitui um título executivo extrajudicial, o que lhe confere plena força jurídica para ser executado.</p>
-                    </details>
-                    <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
-                        <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
-                            <span class="pr-2">Quanto tempo dura um procedimento?</span>
-                            <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <p class="text-slate-400 mt-4 text-sm sm:text-base">Embora varie com a complexidade do caso, os procedimentos de mediação e arbitragem são significativamente mais rápidos que os processos judiciais. Muitos casos são resolvidos em questão de semanas ou poucos meses, em contraste com os anos que um processo pode levar na justiça comum.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-    </main>
+<section id="faq" class="py-12 sm:py-16">
+    <div class="container mx-auto px-4 sm:px-6 max-w-4xl">
+        <div class="text-center mb-12 sm:mb-16" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl font-bold">Perguntas Frequentes</h2>
+            <p class="text-slate-400 mt-2">Respostas para as dúvidas mais comuns sobre nossos procedimentos.</p>
+        </div>
+        <div class="space-y-4" data-aos="fade-up">
+            <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
+                    <span class="pr-2">Qual a diferença entre Mediação e Arbitragem?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Na Mediação, um terceiro neutro (mediador) ajuda as partes a chegarem a um acordo, mas elas retêm o poder de decisão. Na Arbitragem, as partes elegem um terceiro (árbitro) para tomar uma decisão final e vinculante sobre o conflito, que tem força de sentença judicial.</p>
+            </details>
+            <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
+                     <span class="pr-2">O acordo da mediação tem validade jurídica?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Sim. O acordo firmado em mediação, assinado pelas partes e seus advogados, constitui um título executivo extrajudicial, o que lhe confere plena força jurídica para ser executado.</p>
+            </details>
+            <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
+                <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
+                    <span class="pr-2">Quanto tempo dura um procedimento?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Embora varie com a complexidade do caso, os procedimentos de mediação e arbitragem são significativamente mais rápidos que os processos judiciais. Muitos casos são resolvidos em questão de semanas ou poucos meses, em contraste com os anos que um processo pode levar na justiça comum.</p>
+            </details>
+        </div>
+    </div>
+</section>
     
 <footer id="contato" class="mt-20 border-t border-slate-800 bg-slate-900/40 relative">
     <div class="container mx-auto px-6 py-16 sm:py-24">
