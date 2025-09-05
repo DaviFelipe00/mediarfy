@@ -8,19 +8,24 @@
     
     <link rel="canonical" href="https://www.mediarfy.com.br/">
 
-    <!-- Open Graph -->
+    <!-- Open Graph - CORRIGIDO -->
     <meta property="og:title" content="Mediarfy | Mediação e Arbitragem em Recife">
     <meta property="og:description" content="Soluções ágeis e eficientes para resolução de conflitos com a mesma validade de uma sentença judicial.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mediarfy.com.br/">
     <meta property="og:image" content="https://www.mediarfy.com.br/logo.png">
+    <meta property="og:image:alt" content="Logo da Mediarfy - Mediação e Arbitragem">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Mediarfy">
 
-    <!-- Twitter -->
+    <!-- Twitter Card - MELHORADO -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mediarfy | Mediação e Arbitragem em Recife">
     <meta name="twitter:description" content="Soluções ágeis e eficientes para resolução de conflitos com a mesma validade de uma sentença judicial.">
     <meta name="twitter:image" content="https://www.mediarfy.com.br/logo.png">
+    <meta name="twitter:image:alt" content="Logo da Mediarfy - Mediação e Arbitragem">
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -48,7 +53,7 @@
         details[open] summary .arrow-down { transform: rotate(180deg); }
     </style>
 
-    <!-- Dados estruturados -->
+    <!-- Dados estruturados - MELHORADO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,8 +61,15 @@
       "name": "Mediarfy - Mediação e Arbitragem",
       "description": "Câmara de mediação e arbitragem especializada na resolução de conflitos cíveis e empresariais em Recife, PE.",
       "url": "https://www.mediarfy.com.br/",
-      "logo": "https://www.mediarfy.com.br/logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.mediarfy.com.br/logo.png",
+        "width": 1200,
+        "height": 630
+      },
+      "image": "https://www.mediarfy.com.br/logo.png",
       "telephone": "+5581987000534",
+      "email": "mediarfy@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "R. Dona Maria César, 170 - Ed Luciano Costa",
@@ -69,7 +81,9 @@
       "areaServed": {
         "@type": "City",
         "name": "Recife"
-      }
+      },
+      "serviceType": ["Mediação", "Arbitragem"],
+      "priceRange": "$$"
     }
     </script>
 </head>
@@ -84,7 +98,7 @@
 <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center bg-slate-900/80 backdrop-blur-lg relative z-20">
         <a href="#" class="flex items-center gap-3">
-            <img src="logo.png" alt="Logo da Mediarfy" class="h-9 md:h-20 transition-all">
+            <img src="logo.png" alt="Logo da Mediarfy - Mediação e Arbitragem em Recife" class="h-9 md:h-20 transition-all">
             <span class="text-2xl font-bold tracking-wider text-slate-200">
                 <span>MEDIAR</span><span class="text-blue-400">FY</span>
             </span>
@@ -284,25 +298,27 @@
             <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
                 <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
                     <span class="pr-2">Qual a diferença entre Mediação e Arbitragem?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </summary>
                 <p class="text-slate-400 mt-4 text-sm sm:text-base">Na Mediação, um terceiro neutro (mediador) ajuda as partes a chegarem a um acordo, mas elas retêm o poder de decisão. Na Arbitragem, as partes elegem um terceiro (árbitro) para tomar uma decisão final e vinculante sobre o conflito, que tem força de sentença judicial.</p>
             </details>
+
             <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
                 <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
-                     <span class="pr-2">O acordo da mediação tem validade jurídica?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <span class="pr-2">O acordo da mediação tem validade jurídica?</span>
+                    <svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </summary>
-                <p class="text-slate-400 mt-4 text-sm sm:text-base">Sim. O acordo firmado em mediação, assinado pelas partes e seus advogados, constitui um título executivo extrajudicial, o que lhe confere plena força jurídica para ser executado.</p>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Sim. O acordo firmado em mediação, assinado pelas partes, constitui um título executivo extrajudicial, o que lhe confere plena força jurídica para ser executado.</p>
             </details>
+
             <details class="bg-slate-800/40 border border-slate-700 rounded-lg p-4 sm:p-6 group">
                 <summary class="flex justify-between items-center cursor-pointer font-semibold text-base sm:text-lg">
                     <span class="pr-2">Quanto tempo dura um procedimento?</span>
-                    <svg class="h-6 w-6 transform transition-transform duration-300 arrow-down flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="h-6 w-6 transform transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                     </svg>
                 </summary>
